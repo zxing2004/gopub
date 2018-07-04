@@ -2,92 +2,105 @@ package routers
 
 import (
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/context/param"
 )
 
 func init() {
 
-	beego.GlobalControllerRouter["controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["controllers/api:ProjectController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"],
 		beego.ControllerComments{
-			Method:           "Post",
-			Router:           `/`,
+			Method: "Post",
+			Router: `/`,
 			AllowHTTPMethods: []string{"post"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["controllers/api:ProjectController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"],
 		beego.ControllerComments{
-			Method:           "GetOne",
-			Router:           `/:id`,
+			Method: "GetAll",
+			Router: `/`,
 			AllowHTTPMethods: []string{"get"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["controllers/api:ProjectController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"],
 		beego.ControllerComments{
-			Method:           "GetAll",
-			Router:           `/`,
+			Method: "GetOne",
+			Router: `/:id`,
 			AllowHTTPMethods: []string{"get"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["controllers/api:ProjectController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"],
 		beego.ControllerComments{
-			Method:           "Put",
-			Router:           `/:id`,
+			Method: "Put",
+			Router: `/:id`,
 			AllowHTTPMethods: []string{"put"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["controllers/api:ProjectController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:ProjectController"],
 		beego.ControllerComments{
-			Method:           "Delete",
-			Router:           `/:id`,
+			Method: "Delete",
+			Router: `/:id`,
 			AllowHTTPMethods: []string{"delete"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:TaskController"] = append(beego.GlobalControllerRouter["controllers/api:TaskController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"],
 		beego.ControllerComments{
-			Method:           "Post",
-			Router:           `/`,
+			Method: "Post",
+			Router: `/`,
 			AllowHTTPMethods: []string{"post"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:TaskController"] = append(beego.GlobalControllerRouter["controllers/api:TaskController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"],
 		beego.ControllerComments{
-			Method:           "GetOne",
-			Router:           `/:id`,
+			Method: "GetAllAndProName",
+			Router: `/`,
 			AllowHTTPMethods: []string{"get"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:TaskController"] = append(beego.GlobalControllerRouter["controllers/api:TaskController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"],
 		beego.ControllerComments{
-			Method:           "GetAllAndProName",
-			Router:           `/`,
+			Method: "GetAll",
+			Router: `/`,
 			AllowHTTPMethods: []string{"get"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:TaskController"] = append(beego.GlobalControllerRouter["controllers/api:TaskController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"],
 		beego.ControllerComments{
-			Method:           "GetAll",
-			Router:           `/`,
+			Method: "GetOne",
+			Router: `/:id`,
 			AllowHTTPMethods: []string{"get"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:TaskController"] = append(beego.GlobalControllerRouter["controllers/api:TaskController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"],
 		beego.ControllerComments{
-			Method:           "Put",
-			Router:           `/:id`,
+			Method: "Put",
+			Router: `/:id`,
 			AllowHTTPMethods: []string{"put"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:TaskController"] = append(beego.GlobalControllerRouter["controllers/api:TaskController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TaskController"],
 		beego.ControllerComments{
-			Method:           "Delete",
-			Router:           `/:id`,
+			Method: "Delete",
+			Router: `/:id`,
 			AllowHTTPMethods: []string{"delete"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
-	beego.GlobalControllerRouter["controllers/api:TokenController"] = append(beego.GlobalControllerRouter["controllers/api:TokenController"],
+	beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TokenController"] = append(beego.GlobalControllerRouter["zxing2004/gopub/src/controllers/api:TokenController"],
 		beego.ControllerComments{
-			Method:           "IssueToken",
-			Router:           `/`,
+			Method: "IssueToken",
+			Router: `/`,
 			AllowHTTPMethods: []string{"get"},
-			Params:           nil})
+			MethodParams: param.Make(),
+			Params: nil})
 
 }
