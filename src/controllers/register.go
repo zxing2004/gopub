@@ -98,8 +98,6 @@ func (c *RegisterController) Post() {
 		newuser.Avatar = "default.jpg"
 		newuser.Role = int16(registerRole)
 		newuser.Status = 10
-		newuser.CreatedAt = time.Now()
-		newuser.UpdatedAt = time.Now()
 		newuser.AuthKey = userAuth
 		newuser.Email = registerEmail
 		newuser.Realname = registerRealname

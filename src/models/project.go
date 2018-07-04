@@ -35,8 +35,8 @@ type Project struct {
 	LastDeploy     string    `orm:"column(last_deploy);type(text);null"`
 	Audit          int16     `orm:"column(audit);null"`
 	KeepVersionNum int       `orm:"column(keep_version_num)"`
-	CreatedAt      time.Time `orm:"column(created_at);type(datetime);null"`
-	UpdatedAt      time.Time `orm:"column(updated_at);type(datetime);null"`
+	CreatedAt      time.Time `orm:"column(created_at);auto_now_add;type(datetime);"`
+	UpdatedAt      time.Time `orm:"column(updated_at);auto_now;type(datetime);"`
 	P2p            int16     `orm:"column(p2p)"`
 	HostGroup      string    `orm:"column(host_group)"`
 	Gzip           int16     `orm:"column(gzip)"`

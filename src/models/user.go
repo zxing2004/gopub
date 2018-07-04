@@ -22,8 +22,8 @@ type User struct {
 	Avatar                 string    `orm:"column(avatar);size(100);null"`
 	Role                   int16     `orm:"column(role)"`
 	Status                 int16     `orm:"column(status)"`
-	CreatedAt              time.Time `orm:"column(created_at);type(datetime)"`
-	UpdatedAt              time.Time `orm:"column(updated_at);type(datetime)"`
+	CreatedAt              time.Time `orm:"column(created_at);auto_now_add;type(datetime)"`
+	UpdatedAt              time.Time `orm:"column(updated_at);auto_now;type(datetime)"`
 	Realname               string    `orm:"column(realname);size(32)"`
 }
 
