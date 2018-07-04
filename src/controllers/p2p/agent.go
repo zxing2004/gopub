@@ -1,12 +1,12 @@
 package p2pcontrollers
 
 import (
-	"controllers"
 	"encoding/json"
-	"library/components"
-	"library/p2p/init_sever"
-	"models"
 	"strings"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/components"
+	"zxing2004/gopub/src/library/p2p/init_sever"
+	"zxing2004/gopub/src/models"
 
 	"github.com/astaxie/beego"
 )

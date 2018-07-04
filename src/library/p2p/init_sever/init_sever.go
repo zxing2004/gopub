@@ -1,10 +1,11 @@
 package init_sever
 
 import (
-	"github.com/astaxie/beego"
-	"library/p2p/common"
-	"library/p2p/server"
 	"os"
+	"zxing2004/gopub/src/library/p2p/common"
+	"zxing2004/gopub/src/library/p2p/server"
+
+	"github.com/astaxie/beego"
 )
 
 var P2pSvc *server.Server

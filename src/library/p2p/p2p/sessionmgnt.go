@@ -3,7 +3,7 @@ package p2p
 import (
 	log "github.com/cihub/seelog"
 
-	"library/p2p/common"
+	"zxing2004/gopub/src/library/p2p/common"
 )
 
 type global struct {

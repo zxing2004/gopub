@@ -1,8 +1,8 @@
 package apicontrollers
 
 import (
-	"library/common"
-	"models"
+	"zxing2004/gopub/src/library/common"
+	"zxing2004/gopub/src/models"
 	"strconv"
 	"strings"
 	"time"

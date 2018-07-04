@@ -1,13 +1,14 @@
 package apicontrollers
 
 import (
-	"library/common"
 	"runtime"
+	"zxing2004/gopub/src/library/common"
 
 	"github.com/astaxie/beego"
 
 	"github.com/dgrijalva/jwt-go"
 )
+
 //TODO 另一版的api验证 废弃
 //基类
 type BaseApiController struct {

@@ -1,9 +1,9 @@
 package othercontrollers
 
 import (
-	"controllers"
 	"fmt"
-	"library/common"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/common"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"

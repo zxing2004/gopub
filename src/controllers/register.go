@@ -2,14 +2,15 @@ package controllers
 
 import (
 	"encoding/json"
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/orm"
-	"golang.org/x/crypto/bcrypt"
-	"library/common"
-	"models"
 	"regexp"
 	"strings"
 	"time"
+	"zxing2004/gopub/src/library/common"
+	"zxing2004/gopub/src/models"
+
+	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/orm"
+	"golang.org/x/crypto/bcrypt"
 )
 
 type RegisterController struct {
@@ -54,12 +55,12 @@ func (c *RegisterController) Post() {
 	err = o.Raw("SELECT * FROM `user` WHERE username= ?", registerUsername).QueryRow(&user)
 	beego.Info(user)
 	if err == nil {
-		userId,_:=c.GetInt("id")
-		if userId==0{
+		userId, _ := c.GetInt("id")
+		if userId == 0 {
 			c.SetJson(1, nil, "用户已存在，请更换账户名")
 			return
 		}
-		if userId !=user.Id{
+		if userId != user.Id {
 			c.SetJson(1, nil, "用户不存在")
 			return
 		}
@@ -67,7 +68,7 @@ func (c *RegisterController) Post() {
 		user.Email = registerEmail
 		user.Realname = registerRealname
 		if user.Role == 20 {
-			o.Raw("DELETE FROM  `group` WHERE `user_id` =  ? ",user.Id).Exec()
+			o.Raw("DELETE FROM  `group` WHERE `user_id` =  ? ", user.Id).Exec()
 			pro_ids := common.GetString(registerData["pro_ids"])
 			pro_idArr := strings.Split(pro_ids, ",")
 			for _, pro_id := range pro_idArr {

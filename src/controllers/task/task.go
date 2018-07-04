@@ -1,9 +1,9 @@
 package taskcontrollers
 
 import (
-	"controllers"
+	"zxing2004/gopub/src/controllers"
 
-	"models"
+	"zxing2004/gopub/src/models"
 )
 
 type TaskController struct {

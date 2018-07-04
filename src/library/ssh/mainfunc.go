@@ -4,12 +4,13 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/gaoyue1989/sshexec"
-	"library/p2p/init_sever"
-	"library/p2p/server"
 	"os/exec"
 	"path/filepath"
 	"time"
+	"zxing2004/gopub/src/library/p2p/init_sever"
+	"zxing2004/gopub/src/library/p2p/server"
+
+	"github.com/gaoyue1989/sshexec"
 )
 
 func CommandLocal(cmd string, to int) (sshexec.ExecResult, error) {
@@ -49,7 +50,7 @@ func LocalExec(cmd string) sshexec.ExecResult {
 	err := execCommand.Run()
 	if err != nil {
 		execResult.Error = err
-		execResult.ErrorInfo=err.Error()
+		execResult.ErrorInfo = err.Error()
 		execResult.Result = b1.String()
 		return execResult
 	} else {

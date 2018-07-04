@@ -1,29 +1,30 @@
 package routers
 
 import (
-	"controllers"
-	"controllers/api"
-	"controllers/conf"
-	"controllers/other"
-	"controllers/p2p"
-	"controllers/record"
-	"controllers/task"
-	"controllers/walle"
-	"github.com/astaxie/beego"
-	"controllers/user"
-	"github.com/astaxie/beego/plugins/cors"
 	"time"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/controllers/api"
+	"zxing2004/gopub/src/controllers/conf"
+	"zxing2004/gopub/src/controllers/other"
+	"zxing2004/gopub/src/controllers/p2p"
+	"zxing2004/gopub/src/controllers/record"
+	"zxing2004/gopub/src/controllers/task"
+	"zxing2004/gopub/src/controllers/user"
+	"zxing2004/gopub/src/controllers/walle"
+
+	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/plugins/cors"
 )
 
 func init() {
 
 	beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
-		AllowAllOrigins:  true,
-		AllowOrigins:     []string{"*"},
-		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
-		AllowHeaders:     []string{"Origin","UserToken", "Authorization", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
-		ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
-		MaxAge:           5 * time.Minute,
+		AllowAllOrigins: true,
+		AllowOrigins:    []string{"*"},
+		AllowMethods:    []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowHeaders:    []string{"Origin", "UserToken", "Authorization", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
+		ExposeHeaders:   []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
+		MaxAge:          5 * time.Minute,
 	}))
 
 	beego.Router("/login", &controllers.LoginController{})

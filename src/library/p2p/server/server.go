@@ -1,10 +1,11 @@
 package server
 
 import (
-	"github.com/julienschmidt/httprouter"
-	"library/p2p/common"
-	"library/p2p/p2p"
 	"time"
+	"zxing2004/gopub/src/library/p2p/common"
+	"zxing2004/gopub/src/library/p2p/p2p"
+
+	"github.com/julienschmidt/httprouter"
 )
 
 type Server struct {

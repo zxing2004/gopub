@@ -1,11 +1,12 @@
 package confcontrollers
 
 import (
-	"controllers"
+	"zxing2004/gopub/src/controllers"
 
 	"encoding/json"
+	"zxing2004/gopub/src/models"
+
 	"github.com/astaxie/beego"
-	"models"
 )
 
 type SaveController struct {

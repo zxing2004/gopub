@@ -5,13 +5,14 @@ import (
 
 	"encoding/json"
 	"errors"
+	"io/ioutil"
+	"strconv"
+	"strings"
+	"zxing2004/gopub/src/library/p2p/p2p"
+
 	log "github.com/cihub/seelog"
 	"github.com/julienschmidt/httprouter"
 	"github.com/xtfly/gokits"
-	"io/ioutil"
-	"library/p2p/p2p"
-	"strconv"
-	"strings"
 )
 
 func (svc *Server) String(r int, s string, w http.ResponseWriter) {

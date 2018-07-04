@@ -1,9 +1,10 @@
 package controllers
 
 import (
+	"zxing2004/gopub/src/models"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	"models"
 )
 
 type TestApiController struct {

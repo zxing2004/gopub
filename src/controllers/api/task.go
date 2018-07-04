@@ -3,7 +3,7 @@ package apicontrollers
 import (
 	"encoding/json"
 	"errors"
-	"models"
+	"zxing2004/gopub/src/models"
 	"strconv"
 	"strings"
 	"time"

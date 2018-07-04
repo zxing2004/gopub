@@ -3,9 +3,10 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 
+	"zxing2004/gopub/src/models"
+
 	"github.com/astaxie/beego/orm"
 	"golang.org/x/crypto/bcrypt"
-	"models"
 
 	"encoding/json"
 )

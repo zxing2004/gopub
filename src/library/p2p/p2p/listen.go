@@ -7,9 +7,10 @@ import (
 	"net"
 	"time"
 
+	"zxing2004/gopub/src/library/p2p/common"
+
 	log "github.com/cihub/seelog"
 	"github.com/xtfly/gokits"
-	"library/p2p/common"
 )
 
 // PeerConn wraps an incoming network connection and contains metadata that helps

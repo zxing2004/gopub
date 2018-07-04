@@ -1,12 +1,12 @@
 package wallecontrollers
 
 import (
-	"controllers"
-	"library/components"
-	"library/p2p/init_sever"
-	"models"
 	"os"
 	"time"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/components"
+	"zxing2004/gopub/src/library/p2p/init_sever"
+	"zxing2004/gopub/src/models"
 )
 
 type DetectionController struct {

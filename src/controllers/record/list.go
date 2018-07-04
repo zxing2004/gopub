@@ -1,9 +1,10 @@
 package recordcontrollers
 
 import (
-	"controllers"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/common"
+
 	"github.com/astaxie/beego/orm"
-	"library/common"
 )
 
 type ListController struct {

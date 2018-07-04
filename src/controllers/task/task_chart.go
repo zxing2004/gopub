@@ -1,14 +1,15 @@
 package taskcontrollers
 
 import (
-	"controllers"
+	"time"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/common"
+	"zxing2004/gopub/src/library/components"
+	"zxing2004/gopub/src/models"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/cache"
 	"github.com/astaxie/beego/orm"
-	"library/common"
-	"library/components"
-	"models"
-	"time"
 )
 
 type TaskChartController struct {

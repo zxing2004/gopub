@@ -1,13 +1,14 @@
 package taskcontrollers
 
 import (
-	"controllers"
 	"encoding/json"
-	"github.com/astaxie/beego"
-	"models"
 	"time"
-	"library/components"
-	"library/common"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/common"
+	"zxing2004/gopub/src/library/components"
+	"zxing2004/gopub/src/models"
+
+	"github.com/astaxie/beego"
 )
 
 type SaveController struct {
@@ -38,14 +39,14 @@ func (c *SaveController) Post() {
 			if err == nil {
 				task.Hosts = ss.Hosts
 			}
-			if ss.IsGroup==1{
+			if ss.IsGroup == 1 {
 				s := components.BaseComponents{}
 				s.SetProject(ss)
-				mapHost:=s.GetGroupHost()
+				mapHost := s.GetGroupHost()
 				for k, v := range mapHost {
-					task1:=task
-					task1.Hosts=v
-					task1.Title=task1.Title+"第"+common.GetString(k)+"批"
+					task1 := task
+					task1.Hosts = v
+					task1.Title = task1.Title + "第" + common.GetString(k) + "批"
 					models.AddTask(&task1)
 				}
 				c.SetJson(0, task, "修改成功")

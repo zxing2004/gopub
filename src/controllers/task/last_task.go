@@ -1,9 +1,10 @@
 package taskcontrollers
 
 import (
-	"controllers"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/models"
+
 	"github.com/astaxie/beego/orm"
-	"models"
 )
 
 type LastTaskController struct {

@@ -1,13 +1,14 @@
 package controllers
 
 import (
-	"library/common"
 	"runtime"
+	"zxing2004/gopub/src/library/common"
+
+	"strings"
+	"zxing2004/gopub/src/models"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	"models"
-	"strings"
 )
 
 //基类
@@ -75,4 +76,3 @@ func (this *BaseController) SetJson(code int, data interface{}, Msg string) {
 	}
 
 }
-

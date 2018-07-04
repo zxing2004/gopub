@@ -3,9 +3,9 @@ package components
 import (
 	"errors"
 	"fmt"
-	"library/common"
 	"os"
 	"strings"
+	"zxing2004/gopub/src/library/common"
 )
 
 type BaseFile struct {

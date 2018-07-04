@@ -2,9 +2,9 @@ package components
 
 import (
 	"fmt"
-	"library/common"
 	"os"
 	"strings"
+	"zxing2004/gopub/src/library/common"
 )
 
 type BaseGit struct {

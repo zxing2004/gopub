@@ -1,9 +1,9 @@
 package taskcontrollers
 
 import (
-	"controllers"
-	"models"
 	"time"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/models"
 )
 
 type RollBackController struct {

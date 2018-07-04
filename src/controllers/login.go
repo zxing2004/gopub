@@ -4,11 +4,12 @@ import (
 	"github.com/astaxie/beego"
 
 	"encoding/json"
+	"time"
+	"zxing2004/gopub/src/library/common"
+	"zxing2004/gopub/src/models"
+
 	"github.com/astaxie/beego/orm"
 	"golang.org/x/crypto/bcrypt"
-	"library/common"
-	"models"
-	"time"
 )
 
 type LoginController struct {
@@ -44,7 +45,7 @@ func (c *LoginController) Post() {
 			user.AuthKey = userAuth
 			models.UpdateUserById(&user)
 		}
-		user.PasswordHash=""
+		user.PasswordHash = ""
 		c.SetJson(0, user, "")
 		return
 	}

@@ -1,14 +1,14 @@
 package usercontrollers
 
 import (
-	"controllers"
+	"zxing2004/gopub/src/controllers"
+
 	"github.com/astaxie/beego/orm"
 )
 
 type UserProjectController struct {
 	controllers.BaseController
 }
-
 
 func (c *UserProjectController) Get() {
 	userId := c.GetString("user_id")

@@ -1,8 +1,8 @@
 package p2pcontrollers
 
 import (
-	"controllers"
-	"library/p2p/init_sever"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/p2p/init_sever"
 )
 
 type TaskController struct {

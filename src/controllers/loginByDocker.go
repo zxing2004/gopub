@@ -2,12 +2,13 @@ package controllers
 
 import (
 	"encoding/json"
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/orm"
-	"library/common"
-	"models"
 	"net/url"
 	"time"
+	"zxing2004/gopub/src/library/common"
+	"zxing2004/gopub/src/models"
+
+	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/orm"
 )
 
 type LoginByDockerController struct {

@@ -1,8 +1,8 @@
 package confcontrollers
 
 import (
-	"controllers"
-	"models"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/models"
 )
 
 type DelController struct {

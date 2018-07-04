@@ -1,9 +1,9 @@
 package wallecontrollers
 
 import (
-	"controllers"
-	"library/components"
-	"models"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/components"
+	"zxing2004/gopub/src/models"
 )
 
 type JenkinsController struct {

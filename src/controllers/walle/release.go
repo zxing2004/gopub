@@ -1,13 +1,14 @@
 package wallecontrollers
 
 import (
-	"controllers"
-	"github.com/astaxie/beego/orm"
-	"library/common"
-	"library/components"
-	"models"
 	"strings"
 	"time"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/common"
+	"zxing2004/gopub/src/library/components"
+	"zxing2004/gopub/src/models"
+
+	"github.com/astaxie/beego/orm"
 )
 
 type ReleaseController struct {
@@ -135,7 +136,7 @@ func (c *ReleaseController) releaseHandling() error {
 			c.failHandling(&s)
 			return err
 		}
-	} else if c.Project.RepoType == "file" ||  c.Project.RepoType == "jenkins" {
+	} else if c.Project.RepoType == "file" || c.Project.RepoType == "jenkins" {
 		f := components.BaseFile{}
 		f.SetBaseComponents(s)
 		err = f.UpdateToVersion()

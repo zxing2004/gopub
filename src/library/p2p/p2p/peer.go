@@ -5,8 +5,9 @@ import (
 	"net"
 	"time"
 
+	"zxing2004/gopub/src/library/p2p/flowctrl"
+
 	log "github.com/cihub/seelog"
-	"library/p2p/flowctrl"
 )
 
 const (

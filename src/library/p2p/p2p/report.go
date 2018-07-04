@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	log "github.com/cihub/seelog"
-	"library/p2p/common"
+	"zxing2004/gopub/src/library/p2p/common"
 )
 
 type reportInfo struct {

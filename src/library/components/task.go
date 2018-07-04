@@ -2,8 +2,8 @@ package components
 
 import (
 	"fmt"
-	"library/common"
 	"strings"
+	"zxing2004/gopub/src/library/common"
 )
 
 func (c *BaseComponents) PreDeploy(version string) error {

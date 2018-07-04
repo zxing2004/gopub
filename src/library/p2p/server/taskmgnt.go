@@ -6,11 +6,12 @@ import (
 	"strings"
 	"time"
 
+	"strconv"
+	"zxing2004/gopub/src/library/p2p/common"
+	"zxing2004/gopub/src/library/p2p/p2p"
+
 	log "github.com/cihub/seelog"
 	"github.com/xtfly/gokits"
-	"library/p2p/common"
-	"library/p2p/p2p"
-	"strconv"
 )
 
 type clientRsp struct {

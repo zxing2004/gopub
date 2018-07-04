@@ -1,11 +1,11 @@
 package p2pcontrollers
 
 import (
-	"controllers"
-	"library/common"
-	"library/components"
-	"library/p2p/init_sever"
-	"models"
+	"zxing2004/gopub/src/controllers"
+	"zxing2004/gopub/src/library/common"
+	"zxing2004/gopub/src/library/components"
+	"zxing2004/gopub/src/library/p2p/init_sever"
+	"zxing2004/gopub/src/models"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
@@ -19,7 +19,7 @@ type P2pinfo struct {
 	Host   string
 	Status string
 	Pid    int
-	Pname    string
+	Pname  string
 }
 
 func (c *CheckController) Get() {
